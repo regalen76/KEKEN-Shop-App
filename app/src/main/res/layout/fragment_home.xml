@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#232936"
+    tools:context=".HomeFragment">
+
+    <LinearLayout
+        android:background="#3c465c"
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KEKEN Shop"
+            android:textColor="@color/white"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/mclaren"
+           />
+
+    </LinearLayout>
+
+    <ViewFlipper
+        android:layout_below="@+id/header"
+        android:id="@+id/carousel"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:flipInterval="3000"
+        android:autoStart="true"
+        android:inAnimation="@android:anim/slide_in_left"
+        android:outAnimation="@android:anim/slide_out_right">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/new_project_4"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/new_project_5"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/new_project_6"/>
+
+    </ViewFlipper>
+
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/carousel"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile Games"
+        android:textColor="@color/white"
+        android:id="@+id/mobiletext"/>
+
+    <LinearLayout
+        android:id="@+id/mobileline"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@id/mobiletext"
+        android:background="#3c465c"
+        android:orientation="horizontal" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mobilecontainer"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_below="@+id/mobileline"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/mobilecontainer"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PC Games"
+        android:textColor="@color/white"
+        android:id="@+id/pctext"/>
+
+    <LinearLayout
+        android:id="@+id/pcline"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@id/pctext"
+        android:background="#3c465c"
+        android:orientation="horizontal" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:id="@+id/pccontainer"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_below="@+id/pcline"/>
+
+
+</RelativeLayout>
