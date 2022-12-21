@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#232936"
-    tools:context=".AccountFragment">
+    tools:context=".RegisterFragment">
 
     <LinearLayout
         android:background="#3c465c"
@@ -30,30 +30,30 @@
         android:layout_marginTop="35dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login"
+        android:text="Register"
         android:textSize="20dp"
         android:textColor="@color/white"
-        android:id="@+id/logintext"/>
+        android:id="@+id/registertext"/>
 
     <LinearLayout
-        android:id="@+id/loginline"
+        android:id="@+id/registerline"
         android:layout_width="match_parent"
         android:layout_height="3dp"
-        android:layout_below="@id/logintext"
+        android:layout_below="@id/registertext"
         android:background="#3c465c"
         android:orientation="horizontal" />
 
     <RelativeLayout
-        android:id="@+id/logincontainer"
+        android:id="@+id/registercontainer"
         android:layout_centerHorizontal="true"
         android:layout_width="350dp"
         android:layout_height="340dp"
-        android:layout_below="@id/logincontainer2"
+        android:layout_below="@id/registercontainer2"
         android:background="@drawable/layout_bg3">
 
         <!--Email section-->
         <TextView
-            android:id="@+id/emailtext"
+            android:id="@+id/emailregistertext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Email:"
@@ -63,15 +63,15 @@
             android:layout_marginLeft="30dp"
             />
         <RelativeLayout
-            android:id="@+id/insertcontainer1"
+            android:id="@+id/registerinsertcontainer1"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
             android:layout_width="300dp"
             android:layout_height="40dp"
-            android:layout_below="@id/emailtext"
+            android:layout_below="@id/emailregistertext"
             android:background="@drawable/layout_bg2">
             <EditText
-                android:id="@+id/emailedittext"
+                android:id="@+id/emailregisteredittext"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="5dp"
                 android:background="@null"
@@ -83,8 +83,8 @@
 
         <!--Password Section-->
         <TextView
-            android:id="@+id/pwfirsttext"
-            android:layout_below="@id/insertcontainer1"
+            android:id="@+id/registerpwfirsttext"
+            android:layout_below="@id/registerinsertcontainer1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Password :"
@@ -94,28 +94,29 @@
             android:layout_marginLeft="30dp"
             />
         <RelativeLayout
-            android:id="@+id/insertcontainer2"
+            android:id="@+id/registerinsertcontainer2"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
             android:layout_width="300dp"
             android:layout_height="40dp"
-            android:layout_below="@id/pwfirsttext"
+            android:layout_below="@id/registerpwfirsttext"
             android:background="@drawable/layout_bg2">
             <EditText
-                android:id="@+id/pwfirstedittext"
+                android:id="@+id/registerpwfirstedittext"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="5dp"
                 android:background="@null"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20dp"
+                android:inputType="textPassword"
                 android:hint="Insert Your Password"/>
         </RelativeLayout>
 
         <!--reenter password section-->
         <TextView
-            android:id="@+id/pwsecondtext"
-            android:layout_below="@id/insertcontainer2"
+            android:id="@+id/registerpwsecondtext"
+            android:layout_below="@id/registerinsertcontainer2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Confirm Password:"
@@ -129,16 +130,17 @@
             android:layout_marginTop="10dp"
             android:layout_width="300dp"
             android:layout_height="40dp"
-            android:layout_below="@id/pwsecondtext"
+            android:layout_below="@id/registerpwsecondtext"
             android:background="@drawable/layout_bg2">
             <EditText
-                android:id="@+id/pwsecondedittext"
+                android:id="@+id/registerpwsecondedittext"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="5dp"
                 android:background="@null"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20dp"
+                android:inputType="textPassword"
                 android:hint="Re enter your password"/>
         </RelativeLayout>
     </RelativeLayout>
@@ -146,8 +148,8 @@
     <LinearLayout
         android:layout_marginBottom="-20dp"
         android:layout_marginLeft="35dp"
-        android:id="@+id/logincontainer2"
-        android:layout_below="@id/loginline"
+        android:id="@+id/registercontainer2"
+        android:layout_below="@id/registerline"
         android:layout_marginTop="25dp"
         android:background="@drawable/layout_bg2"
         android:layout_width="50dp"
@@ -162,25 +164,28 @@
     </LinearLayout>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/loginbutton"
+        android:id="@+id/registerbutton"
         android:layout_marginTop="15dp"
         android:layout_centerHorizontal="true"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/logincontainer"
+        android:layout_below="@id/registercontainer"
         android:background="@drawable/layout_bg4"
-        android:text="Login"
+        android:text="Register"
         />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/createaccbutton"
-        android:layout_marginTop="55dp"
-        android:layout_centerHorizontal="true"
-        android:layout_width="300dp"
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:translationZ="100dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/loginbutton"
-        android:background="@drawable/layout_bg4"
-        android:text="Im New Here"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="55dp"
+        android:minWidth="200dp"
+        android:minHeight="50dp"
+        android:indeterminate="true"
+        android:visibility="invisible"
         />
 
 </RelativeLayout>

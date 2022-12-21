@@ -47,7 +47,7 @@
         android:id="@+id/periksacontainer"
         android:layout_centerHorizontal="true"
         android:layout_width="350dp"
-        android:layout_height="120dp"
+        android:layout_height="130dp"
         android:layout_below="@id/periksacontainer2"
         android:background="@drawable/layout_bg3">
         <TextView

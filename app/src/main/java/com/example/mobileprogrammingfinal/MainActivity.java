@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     HomeFragment homeFragment = new HomeFragment();
     SearchFragment searchFragment = new SearchFragment();
     AccountFragment accountFragment = new AccountFragment();
+    RegisterFragment registerFragment = new RegisterFragment();
 
     private DatabaseReference mDatabase;
 
@@ -50,9 +51,16 @@ public class MainActivity extends AppCompatActivity {
                         getSupportFragmentManager().beginTransaction().replace(R.id.containers,accountFragment).commit();
                         return true;
                 }
-
                 return false;
             }
         });
+    }
+
+    public void changeToRegisterPage(){
+       getSupportFragmentManager().beginTransaction().replace(R.id.containers,registerFragment).commit();
+    }
+
+    public void changeToLoginPage(){
+        getSupportFragmentManager().beginTransaction().replace(R.id.containers,accountFragment).commit();
     }
 }
