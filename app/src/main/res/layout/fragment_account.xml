@@ -47,7 +47,7 @@
         android:id="@+id/logincontainer"
         android:layout_centerHorizontal="true"
         android:layout_width="350dp"
-        android:layout_height="340dp"
+        android:layout_height="230dp"
         android:layout_below="@id/logincontainer2"
         android:background="@drawable/layout_bg3">
 
@@ -102,6 +102,7 @@
             android:layout_below="@id/pwfirsttext"
             android:background="@drawable/layout_bg2">
             <EditText
+                android:inputType="textPassword"
                 android:id="@+id/pwfirstedittext"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="5dp"
@@ -110,36 +111,6 @@
                 android:layout_height="wrap_content"
                 android:textSize="20dp"
                 android:hint="Insert Your Password"/>
-        </RelativeLayout>
-
-        <!--reenter password section-->
-        <TextView
-            android:id="@+id/pwsecondtext"
-            android:layout_below="@id/insertcontainer2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Confirm Password:"
-            android:textSize="15dp"
-            android:textColor="@color/white"
-            android:layout_marginTop="30dp"
-            android:layout_marginLeft="30dp"
-            />
-        <RelativeLayout
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"
-            android:layout_width="300dp"
-            android:layout_height="40dp"
-            android:layout_below="@id/pwsecondtext"
-            android:background="@drawable/layout_bg2">
-            <EditText
-                android:id="@+id/pwsecondedittext"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="5dp"
-                android:background="@null"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="20dp"
-                android:hint="Re enter your password"/>
         </RelativeLayout>
     </RelativeLayout>
 
@@ -174,13 +145,27 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/createaccbutton"
-        android:layout_marginTop="55dp"
+        android:layout_marginTop="155dp"
         android:layout_centerHorizontal="true"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/loginbutton"
         android:background="@drawable/layout_bg4"
         android:text="Im New Here"
+        />
+
+    <ProgressBar
+        android:id="@+id/progbar"
+        android:translationZ="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="155dp"
+        android:minWidth="200dp"
+        android:minHeight="50dp"
+        android:indeterminate="true"
+        android:visibility="invisible"
         />
 
 </RelativeLayout>

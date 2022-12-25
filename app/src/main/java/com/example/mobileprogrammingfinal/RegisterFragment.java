@@ -96,7 +96,7 @@ public class RegisterFragment extends Fragment {
                         Toast.makeText(getActivity(),"Registration Complete",Toast.LENGTH_SHORT).show();
 
                         MainActivity mainActivity = (MainActivity) getActivity();
-                        mainActivity.changeToLoginPage();
+                        mainActivity.changeToHomePage();
                     } else{
                         progressBar.setVisibility(getView().INVISIBLE   );
                         try {

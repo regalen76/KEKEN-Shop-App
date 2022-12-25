@@ -4,10 +4,12 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -19,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     SearchFragment searchFragment = new SearchFragment();
     AccountFragment accountFragment = new AccountFragment();
     RegisterFragment registerFragment = new RegisterFragment();
+    LoginedFragment loginedFragment = new LoginedFragment();
 
     private DatabaseReference mDatabase;
 
@@ -48,8 +51,14 @@ public class MainActivity extends AppCompatActivity {
                         getSupportFragmentManager().beginTransaction().replace(R.id.containers,searchFragment).commit();
                         return true;
                     case R.id.account:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.containers,accountFragment).commit();
-                        return true;
+                        if (FirebaseAuth.getInstance().getCurrentUser()!=null) //check jika sudah login ato belom
+                        {
+                            getSupportFragmentManager().beginTransaction().replace(R.id.containers,loginedFragment).commit();
+                            return true;
+                        }else{
+                            getSupportFragmentManager().beginTransaction().replace(R.id.containers,accountFragment).commit();
+                            return true;
+                        }
                 }
                 return false;
             }
@@ -62,5 +71,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void changeToLoginPage(){
         getSupportFragmentManager().beginTransaction().replace(R.id.containers,accountFragment).commit();
+    }
+
+    public void changeToHomePage(){
+        getSupportFragmentManager().beginTransaction().replace(R.id.containers,homeFragment).commit();
     }
 }
