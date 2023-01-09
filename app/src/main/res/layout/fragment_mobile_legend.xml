@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+     <ImageView
+         android:id="@+id/imagee"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:src="@drawable/mobel_legend"
+         android:adjustViewBounds="true"
+         app:layout_constraintTop_toTopOf="parent"
+         app:layout_constraintLeft_toLeftOf="parent"/>
+
+     <FrameLayout
+         android:layout_width="102.5dp"
+         android:layout_height="102.5dp"
+         android:id="@+id/diamond1"
+         android:layout_toEndOf="@+id/imagee"
+         app:layout_constraintTop_toBottomOf="@+id/imagee">
+
+         <ImageView
+             android:id="@+id/rectangle1"
+             android:layout_marginLeft="5dp"
+             android:layout_marginTop="5dp"
+             android:layout_width="92.5dp"
+             android:layout_height="92.5dp"
+             android:src="@drawable/rounded_rectangle"
+             android:clickable="true"
+             android:onClick="diamond1"/>
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <ImageView
+               android:id="@+id/diamond_image1"
+               android:paddingTop="3dp"
+               android:layout_centerHorizontal="true"
+               android:layout_width="51.75dp"
+               android:layout_height="51.75dp"
+               android:src="@drawable/diamond_mole"/>
+
+           <TextView
+               android:paddingTop="3dp"
+               android:gravity="center_horizontal"
+               android:layout_width="wrap_content"
+               android:layout_height="51.75dp"
+               android:layout_centerHorizontal="true"
+               android:layout_below="@id/diamond_image1"
+               android:textStyle="bold"
+               android:text="3
+               Diamonds"/>
+
+          </RelativeLayout>
+
+     </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="102.5dp"
+        android:layout_height="102.5dp"
+        android:id="@+id/diamond2"
+        app:layout_constraintLeft_toRightOf="@id/diamond1"
+        app:layout_constraintTop_toBottomOf="@+id/imagee">
+
+        <ImageView
+            android:id="@+id/rectangle2"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="92.5dp"
+            android:layout_height="92.5dp"
+            android:src="@drawable/rounded_rectangle"
+            android:clickable="true"
+            android:onClick="diamond2"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/diamond_image2"
+                android:paddingTop="3dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="51.75dp"
+                android:layout_height="51.75dp"
+                android:src="@drawable/diamond_mole"/>
+
+            <TextView
+                android:paddingTop="3dp"
+                android:gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="51.75dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/diamond_image2"
+                android:textStyle="bold"
+                android:text="5
+                Diamonds"/>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="102.5dp"
+        android:layout_height="102.5dp"
+        android:id="@+id/diamond3"
+        app:layout_constraintLeft_toRightOf="@id/diamond2"
+        app:layout_constraintTop_toBottomOf="@+id/imagee">
+
+        <ImageView
+            android:id="@+id/rectangle3"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="92.5dp"
+            android:layout_height="92.5dp"
+            android:src="@drawable/rounded_rectangle"
+            android:clickable="true"
+            android:onClick="diamond3"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/diamond_image3"
+                android:paddingTop="3dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="51.75dp"
+                android:layout_height="51.75dp"
+                android:src="@drawable/diamond_mole"/>
+
+            <TextView
+                android:paddingTop="3dp"
+                android:gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="51.75dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/diamond_image3"
+                android:textStyle="bold"
+                android:text="12
+                Diamonds"/>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="102.5dp"
+        android:layout_height="102.5dp"
+        android:id="@+id/diamond4"
+        app:layout_constraintLeft_toRightOf="@id/diamond3"
+        app:layout_constraintTop_toBottomOf="@+id/imagee">
+
+        <ImageView
+            android:id="@+id/rectangle4"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="92.5dp"
+            android:layout_height="92.5dp"
+            android:src="@drawable/rounded_rectangle"
+            android:clickable="true"
+            android:onClick="diamond4"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/diamond_image4"
+                android:paddingTop="3dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="51.75dp"
+                android:layout_height="51.75dp"
+                android:src="@drawable/diamond_mole"/>
+
+            <TextView
+                android:paddingTop="3dp"
+                android:gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="51.75dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/diamond_image4"
+                android:textStyle="bold"
+                android:text="19
+                Diamonds"/>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="102.5dp"
+        android:layout_height="102.5dp"
+        android:id="@+id/diamond5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diamond1">
+
+        <ImageView
+
+            android:id="@+id/rectangle5"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="92.5dp"
+            android:layout_height="92.5dp"
+            android:src="@drawable/rounded_rectangle"
+            android:clickable="true"
+            android:onClick="diamond5"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/diamond_image5"
+                android:paddingTop="3dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="51.75dp"
+                android:layout_height="51.75dp"
+                android:src="@drawable/diamond_mole"/>
+
+            <TextView
+                android:paddingTop="3dp"
+                android:gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="51.75dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/diamond_image5"
+                android:textStyle="bold"
+                android:text="28
+                Diamonds"/>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="102.5dp"
+        android:layout_height="102.5dp"
+        android:id="@+id/diamond6"
+        app:layout_constraintLeft_toRightOf="@id/diamond1"
+        app:layout_constraintTop_toBottomOf="@+id/diamond2">
+
+        <ImageView
+
+            android:id="@+id/rectangle6"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="92.5dp"
+            android:layout_height="92.5dp"
+            android:src="@drawable/rounded_rectangle"
+            android:clickable="true"
+            android:onClick="diamond6"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/diamond_image6"
+                android:paddingTop="3dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="51.75dp"
+                android:layout_height="51.75dp"
+                android:src="@drawable/diamond_mole"/>
+
+            <TextView
+                android:paddingTop="3dp"
+                android:gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="51.75dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/diamond_image6"
+                android:textStyle="bold"
+                android:text="44
+                Diamonds"/>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="102.5dp"
+        android:layout_height="102.5dp"
+        android:id="@+id/diamond7"
+        app:layout_constraintLeft_toRightOf="@id/diamond6"
+        app:layout_constraintTop_toBottomOf="@+id/diamond3">
+
+        <ImageView
+            android:id="@+id/rectangle7"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="92.5dp"
+            android:layout_height="92.5dp"
+            android:src="@drawable/rounded_rectangle"
+            android:clickable="true"
+            android:onClick="diamond7"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/diamond_image7"
+                android:paddingTop="3dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="51.75dp"
+                android:layout_height="51.75dp"
+                android:src="@drawable/diamond_mole"/>
+
+            <TextView
+                android:paddingTop="3dp"
+                android:gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="51.75dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/diamond_image7"
+                android:textStyle="bold"
+                android:text="59
+                Diamonds"/>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="102.5dp"
+        android:layout_height="102.5dp"
+        android:id="@+id/diamond8"
+        app:layout_constraintLeft_toRightOf="@id/diamond7"
+        app:layout_constraintTop_toBottomOf="@+id/diamond4">
+
+        <ImageView
+            android:id="@+id/rectangle8"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="92.5dp"
+            android:layout_height="92.5dp"
+            android:src="@drawable/rounded_rectangle"
+            android:clickable="true"
+            android:onClick="diamond8"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/diamond_image8"
+                android:paddingTop="3dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="51.75dp"
+                android:layout_height="51.75dp"
+                android:src="@drawable/diamond_mole"/>
+
+            <TextView
+                android:paddingTop="3dp"
+                android:gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="51.75dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/diamond_image8"
+                android:textStyle="bold"
+                android:text="85
+                Diamonds"/>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="102.5dp"
+        android:layout_height="102.5dp"
+        android:id="@+id/diamond9"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diamond5">
+
+        <ImageView
+            android:id="@+id/rectangle9"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="92.5dp"
+            android:layout_height="92.5dp"
+            android:src="@drawable/rounded_rectangle"
+            android:clickable="true"
+            android:onClick="diamond9"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/diamond_image9"
+                android:paddingTop="3dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="51.75dp"
+                android:layout_height="51.75dp"
+                android:src="@drawable/diamond_mole"/>
+
+            <TextView
+                android:paddingTop="3dp"
+                android:gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="51.75dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/diamond_image9"
+                android:textStyle="bold"
+                android:text="170
+                Diamonds"/>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="102.5dp"
+        android:layout_height="102.5dp"
+        android:id="@+id/diamond10"
+        app:layout_constraintLeft_toRightOf="@id/diamond9"
+        app:layout_constraintTop_toBottomOf="@+id/diamond6">
+
+        <ImageView
+            android:id="@+id/rectangle10"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="92.5dp"
+            android:layout_height="92.5dp"
+            android:src="@drawable/rounded_rectangle"
+            android:clickable="true"
+            android:onClick="diamond10"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/diamond_image10"
+                android:paddingTop="3dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="51.75dp"
+                android:layout_height="51.75dp"
+                android:src="@drawable/diamond_mole"/>
+
+            <TextView
+                android:paddingTop="3dp"
+                android:gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="51.75dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/diamond_image10"
+                android:textStyle="bold"
+                android:text="240
+                Diamonds"/>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="102.5dp"
+        android:layout_height="102.5dp"
+        android:id="@+id/diamond11"
+        app:layout_constraintLeft_toRightOf="@id/diamond10"
+        app:layout_constraintTop_toBottomOf="@+id/diamond7">
+
+        <ImageView
+            android:id="@+id/rectangle11"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="92.5dp"
+            android:layout_height="92.5dp"
+            android:src="@drawable/rounded_rectangle"
+            android:clickable="true"
+            android:onClick="diamond11"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/diamond_image11"
+                android:paddingTop="3dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="51.75dp"
+                android:layout_height="51.75dp"
+                android:src="@drawable/diamond_mole"/>
+
+            <TextView
+                android:paddingTop="3dp"
+                android:gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="51.75dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/diamond_image11"
+                android:textStyle="bold"
+                android:text="296
+                Diamonds"/>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="102.5dp"
+        android:layout_height="102.5dp"
+        android:id="@+id/diamond12"
+        app:layout_constraintLeft_toRightOf="@id/diamond11"
+        app:layout_constraintTop_toBottomOf="@+id/diamond8">
+
+        <ImageView
+            android:id="@+id/rectangle12"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="92.5dp"
+            android:layout_height="92.5dp"
+            android:src="@drawable/rounded_rectangle"
+            android:clickable="true"
+            android:onClick="diamond12"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/diamond_image12"
+                android:paddingTop="3dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="51.75dp"
+                android:layout_height="51.75dp"
+                android:src="@drawable/diamond_mole"/>
+
+            <TextView
+                android:paddingTop="3dp"
+                android:gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="51.75dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/diamond_image12"
+                android:textStyle="bold"
+                android:text="408
+                Diamonds"/>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="102.5dp"
+        android:layout_height="102.5dp"
+        android:id="@+id/diamond13"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diamond9">
+
+        <ImageView
+            android:id="@+id/rectangle13"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="92.5dp"
+            android:layout_height="92.5dp"
+            android:src="@drawable/rounded_rectangle"
+            android:clickable="true"
+            android:onClick="diamond13"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/diamond_image13"
+                android:paddingTop="3dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="51.75dp"
+                android:layout_height="51.75dp"
+                android:src="@drawable/diamond_mole"/>
+
+            <TextView
+                android:paddingTop="3dp"
+                android:gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="51.75dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/diamond_image13"
+                android:textStyle="bold"
+                android:text="568
+                Diamonds"/>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="102.5dp"
+        android:layout_height="102.5dp"
+        android:id="@+id/diamond14"
+        app:layout_constraintLeft_toRightOf="@id/diamond13"
+        app:layout_constraintTop_toBottomOf="@+id/diamond10">
+
+        <ImageView
+            android:id="@+id/rectangle14"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="92.5dp"
+            android:layout_height="92.5dp"
+            android:src="@drawable/rounded_rectangle"
+            android:clickable="true"
+            android:onClick="diamond14"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/diamond_image14"
+                android:paddingTop="3dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="51.75dp"
+                android:layout_height="51.75dp"
+                android:src="@drawable/diamond_mole"/>
+
+            <TextView
+                android:paddingTop="3dp"
+                android:gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="51.75dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/diamond_image14"
+                android:textStyle="bold"
+                android:text="875
+                Diamonds"/>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="102.5dp"
+        android:layout_height="102.5dp"
+        android:id="@+id/diamond15"
+        app:layout_constraintLeft_toRightOf="@id/diamond14"
+        app:layout_constraintTop_toBottomOf="@+id/diamond11">
+
+        <ImageView
+            android:id="@+id/rectangle15"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="92.5dp"
+            android:layout_height="92.5dp"
+            android:src="@drawable/rounded_rectangle"
+            android:clickable="true"
+            android:onClick="diamond15"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/diamond_image15"
+                android:paddingTop="3dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="51.75dp"
+                android:layout_height="51.75dp"
+                android:src="@drawable/diamond_mole"/>
+
+            <TextView
+                android:paddingTop="3dp"
+                android:gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="51.75dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/diamond_image15"
+                android:textStyle="bold"
+                android:text="2010
+                Diamonds"/>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="102.5dp"
+        android:layout_height="102.5dp"
+        android:id="@+id/diamond16"
+        app:layout_constraintLeft_toRightOf="@id/diamond15"
+        app:layout_constraintTop_toBottomOf="@+id/diamond12">
+
+        <ImageView
+            android:id="@+id/rectangle16"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="92.5dp"
+            android:layout_height="92.5dp"
+            android:src="@drawable/rounded_rectangle"
+            android:clickable="true"
+            android:onClick="diamond16"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/diamond_image16"
+                android:paddingTop="3dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="51.75dp"
+                android:layout_height="51.75dp"
+                android:src="@drawable/diamond_mole"/>
+
+            <TextView
+                android:paddingTop="3dp"
+                android:gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="51.75dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/diamond_image16"
+                android:textStyle="bold"
+                android:text="4830
+                Diamonds"/>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/diamond13"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="Price: "
+            android:textSize="25dp"
+            android:gravity="center"/>
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:text="BUY"
+            android:textColor="@color/white"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
