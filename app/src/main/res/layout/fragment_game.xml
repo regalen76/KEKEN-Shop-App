@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#232936"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
      <ImageView
@@ -15,8 +16,8 @@
          app:layout_constraintLeft_toLeftOf="parent"/>
 
      <FrameLayout
-         android:layout_width="102.5dp"
-         android:layout_height="102.5dp"
+         android:layout_width="96.5dp"
+         android:layout_height="122.5dp"
          android:id="@+id/diamond1"
          android:layout_toEndOf="@+id/imagee"
          app:layout_constraintTop_toBottomOf="@+id/imagee">
@@ -25,11 +26,10 @@
              android:id="@+id/rectangle1"
              android:layout_marginLeft="5dp"
              android:layout_marginTop="5dp"
-             android:layout_width="92.5dp"
-             android:layout_height="92.5dp"
+             android:layout_width="match_parent"
+             android:layout_height="112.5dp"
              android:src="@drawable/rounded_rectangle"
-             android:clickable="true"
-             android:onClick="diamond1"/>
+             android:clickable="true" />
 
        <RelativeLayout
            android:layout_width="match_parent"
@@ -44,6 +44,7 @@
                android:src="@drawable/diamond_mole"/>
 
            <TextView
+               android:id="@+id/diamond_text1"
                android:paddingTop="3dp"
                android:gravity="center_horizontal"
                android:layout_width="wrap_content"
@@ -59,8 +60,8 @@
      </FrameLayout>
 
     <FrameLayout
-        android:layout_width="102.5dp"
-        android:layout_height="102.5dp"
+        android:layout_width="96.5dp"
+        android:layout_height="122.5dp"
         android:id="@+id/diamond2"
         app:layout_constraintLeft_toRightOf="@id/diamond1"
         app:layout_constraintTop_toBottomOf="@+id/imagee">
@@ -69,11 +70,10 @@
             android:id="@+id/rectangle2"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
-            android:layout_width="92.5dp"
-            android:layout_height="92.5dp"
+            android:layout_width="match_parent"
+            android:layout_height="112.5dp"
             android:src="@drawable/rounded_rectangle"
-            android:clickable="true"
-            android:onClick="diamond2"/>
+            android:clickable="true" />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -88,6 +88,7 @@
                 android:src="@drawable/diamond_mole"/>
 
             <TextView
+                android:id="@+id/diamond_text2"
                 android:paddingTop="3dp"
                 android:gravity="center_horizontal"
                 android:layout_width="wrap_content"
@@ -103,8 +104,8 @@
     </FrameLayout>
 
     <FrameLayout
-        android:layout_width="102.5dp"
-        android:layout_height="102.5dp"
+        android:layout_width="96.5dp"
+        android:layout_height="122.5dp"
         android:id="@+id/diamond3"
         app:layout_constraintLeft_toRightOf="@id/diamond2"
         app:layout_constraintTop_toBottomOf="@+id/imagee">
@@ -113,11 +114,10 @@
             android:id="@+id/rectangle3"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
-            android:layout_width="92.5dp"
-            android:layout_height="92.5dp"
+            android:layout_width="match_parent"
+            android:layout_height="112.5dp"
             android:src="@drawable/rounded_rectangle"
-            android:clickable="true"
-            android:onClick="diamond3"/>
+            android:clickable="true" />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -132,6 +132,7 @@
                 android:src="@drawable/diamond_mole"/>
 
             <TextView
+                android:id="@+id/diamond_text3"
                 android:paddingTop="3dp"
                 android:gravity="center_horizontal"
                 android:layout_width="wrap_content"
@@ -147,8 +148,8 @@
     </FrameLayout>
 
     <FrameLayout
-        android:layout_width="102.5dp"
-        android:layout_height="102.5dp"
+        android:layout_width="96.5dp"
+        android:layout_height="122.5dp"
         android:id="@+id/diamond4"
         app:layout_constraintLeft_toRightOf="@id/diamond3"
         app:layout_constraintTop_toBottomOf="@+id/imagee">
@@ -157,11 +158,10 @@
             android:id="@+id/rectangle4"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
-            android:layout_width="92.5dp"
-            android:layout_height="92.5dp"
+            android:layout_width="match_parent"
+            android:layout_height="112.5dp"
             android:src="@drawable/rounded_rectangle"
-            android:clickable="true"
-            android:onClick="diamond4"/>
+            android:clickable="true" />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -176,6 +176,7 @@
                 android:src="@drawable/diamond_mole"/>
 
             <TextView
+                android:id="@+id/diamond_text4"
                 android:paddingTop="3dp"
                 android:gravity="center_horizontal"
                 android:layout_width="wrap_content"
@@ -191,8 +192,8 @@
     </FrameLayout>
 
     <FrameLayout
-        android:layout_width="102.5dp"
-        android:layout_height="102.5dp"
+        android:layout_width="96.5dp"
+        android:layout_height="122.5dp"
         android:id="@+id/diamond5"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/diamond1">
@@ -202,11 +203,10 @@
             android:id="@+id/rectangle5"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
-            android:layout_width="92.5dp"
-            android:layout_height="92.5dp"
+            android:layout_width="match_parent"
+            android:layout_height="112.5dp"
             android:src="@drawable/rounded_rectangle"
-            android:clickable="true"
-            android:onClick="diamond5"/>
+            android:clickable="true" />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -221,6 +221,7 @@
                 android:src="@drawable/diamond_mole"/>
 
             <TextView
+                android:id="@+id/diamond_text5"
                 android:paddingTop="3dp"
                 android:gravity="center_horizontal"
                 android:layout_width="wrap_content"
@@ -236,8 +237,8 @@
     </FrameLayout>
 
     <FrameLayout
-        android:layout_width="102.5dp"
-        android:layout_height="102.5dp"
+        android:layout_width="96.5dp"
+        android:layout_height="122.5dp"
         android:id="@+id/diamond6"
         app:layout_constraintLeft_toRightOf="@id/diamond1"
         app:layout_constraintTop_toBottomOf="@+id/diamond2">
@@ -247,11 +248,10 @@
             android:id="@+id/rectangle6"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
-            android:layout_width="92.5dp"
-            android:layout_height="92.5dp"
+            android:layout_width="match_parent"
+            android:layout_height="112.5dp"
             android:src="@drawable/rounded_rectangle"
-            android:clickable="true"
-            android:onClick="diamond6"/>
+            android:clickable="true" />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -266,6 +266,7 @@
                 android:src="@drawable/diamond_mole"/>
 
             <TextView
+                android:id="@+id/diamond_text6"
                 android:paddingTop="3dp"
                 android:gravity="center_horizontal"
                 android:layout_width="wrap_content"
@@ -281,8 +282,8 @@
     </FrameLayout>
 
     <FrameLayout
-        android:layout_width="102.5dp"
-        android:layout_height="102.5dp"
+        android:layout_width="96.5dp"
+        android:layout_height="122.5dp"
         android:id="@+id/diamond7"
         app:layout_constraintLeft_toRightOf="@id/diamond6"
         app:layout_constraintTop_toBottomOf="@+id/diamond3">
@@ -291,11 +292,10 @@
             android:id="@+id/rectangle7"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
-            android:layout_width="92.5dp"
-            android:layout_height="92.5dp"
+            android:layout_width="match_parent"
+            android:layout_height="112.5dp"
             android:src="@drawable/rounded_rectangle"
-            android:clickable="true"
-            android:onClick="diamond7"/>
+            android:clickable="true" />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -310,6 +310,7 @@
                 android:src="@drawable/diamond_mole"/>
 
             <TextView
+                android:id="@+id/diamond_text7"
                 android:paddingTop="3dp"
                 android:gravity="center_horizontal"
                 android:layout_width="wrap_content"
@@ -325,8 +326,8 @@
     </FrameLayout>
 
     <FrameLayout
-        android:layout_width="102.5dp"
-        android:layout_height="102.5dp"
+        android:layout_width="96.5dp"
+        android:layout_height="122.5dp"
         android:id="@+id/diamond8"
         app:layout_constraintLeft_toRightOf="@id/diamond7"
         app:layout_constraintTop_toBottomOf="@+id/diamond4">
@@ -335,11 +336,10 @@
             android:id="@+id/rectangle8"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
-            android:layout_width="92.5dp"
-            android:layout_height="92.5dp"
+            android:layout_width="match_parent"
+            android:layout_height="112.5dp"
             android:src="@drawable/rounded_rectangle"
-            android:clickable="true"
-            android:onClick="diamond8"/>
+            android:clickable="true" />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -354,6 +354,7 @@
                 android:src="@drawable/diamond_mole"/>
 
             <TextView
+                android:id="@+id/diamond_text8"
                 android:paddingTop="3dp"
                 android:gravity="center_horizontal"
                 android:layout_width="wrap_content"
@@ -369,8 +370,8 @@
     </FrameLayout>
 
     <FrameLayout
-        android:layout_width="102.5dp"
-        android:layout_height="102.5dp"
+        android:layout_width="96.5dp"
+        android:layout_height="122.5dp"
         android:id="@+id/diamond9"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/diamond5">
@@ -379,11 +380,10 @@
             android:id="@+id/rectangle9"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
-            android:layout_width="92.5dp"
-            android:layout_height="92.5dp"
+            android:layout_width="match_parent"
+            android:layout_height="112.5dp"
             android:src="@drawable/rounded_rectangle"
-            android:clickable="true"
-            android:onClick="diamond9"/>
+            android:clickable="true" />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -398,6 +398,7 @@
                 android:src="@drawable/diamond_mole"/>
 
             <TextView
+                android:id="@+id/diamond_text9"
                 android:paddingTop="3dp"
                 android:gravity="center_horizontal"
                 android:layout_width="wrap_content"
@@ -413,8 +414,8 @@
     </FrameLayout>
 
     <FrameLayout
-        android:layout_width="102.5dp"
-        android:layout_height="102.5dp"
+        android:layout_width="96.5dp"
+        android:layout_height="122.5dp"
         android:id="@+id/diamond10"
         app:layout_constraintLeft_toRightOf="@id/diamond9"
         app:layout_constraintTop_toBottomOf="@+id/diamond6">
@@ -423,11 +424,10 @@
             android:id="@+id/rectangle10"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
-            android:layout_width="92.5dp"
-            android:layout_height="92.5dp"
+            android:layout_width="match_parent"
+            android:layout_height="112.5dp"
             android:src="@drawable/rounded_rectangle"
-            android:clickable="true"
-            android:onClick="diamond10"/>
+            android:clickable="true" />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -442,6 +442,7 @@
                 android:src="@drawable/diamond_mole"/>
 
             <TextView
+                android:id="@+id/diamond_text10"
                 android:paddingTop="3dp"
                 android:gravity="center_horizontal"
                 android:layout_width="wrap_content"
@@ -457,8 +458,8 @@
     </FrameLayout>
 
     <FrameLayout
-        android:layout_width="102.5dp"
-        android:layout_height="102.5dp"
+        android:layout_width="96.5dp"
+        android:layout_height="122.5dp"
         android:id="@+id/diamond11"
         app:layout_constraintLeft_toRightOf="@id/diamond10"
         app:layout_constraintTop_toBottomOf="@+id/diamond7">
@@ -467,11 +468,10 @@
             android:id="@+id/rectangle11"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
-            android:layout_width="92.5dp"
-            android:layout_height="92.5dp"
+            android:layout_width="match_parent"
+            android:layout_height="112.5dp"
             android:src="@drawable/rounded_rectangle"
-            android:clickable="true"
-            android:onClick="diamond11"/>
+            android:clickable="true" />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -486,6 +486,7 @@
                 android:src="@drawable/diamond_mole"/>
 
             <TextView
+                android:id="@+id/diamond_text11"
                 android:paddingTop="3dp"
                 android:gravity="center_horizontal"
                 android:layout_width="wrap_content"
@@ -501,8 +502,8 @@
     </FrameLayout>
 
     <FrameLayout
-        android:layout_width="102.5dp"
-        android:layout_height="102.5dp"
+        android:layout_width="96.5dp"
+        android:layout_height="122.5dp"
         android:id="@+id/diamond12"
         app:layout_constraintLeft_toRightOf="@id/diamond11"
         app:layout_constraintTop_toBottomOf="@+id/diamond8">
@@ -511,11 +512,10 @@
             android:id="@+id/rectangle12"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
-            android:layout_width="92.5dp"
-            android:layout_height="92.5dp"
+            android:layout_width="match_parent"
+            android:layout_height="112.5dp"
             android:src="@drawable/rounded_rectangle"
-            android:clickable="true"
-            android:onClick="diamond12"/>
+            android:clickable="true" />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -530,6 +530,7 @@
                 android:src="@drawable/diamond_mole"/>
 
             <TextView
+                android:id="@+id/diamond_text12"
                 android:paddingTop="3dp"
                 android:gravity="center_horizontal"
                 android:layout_width="wrap_content"
@@ -545,8 +546,8 @@
     </FrameLayout>
 
     <FrameLayout
-        android:layout_width="102.5dp"
-        android:layout_height="102.5dp"
+        android:layout_width="96.5dp"
+        android:layout_height="122.5dp"
         android:id="@+id/diamond13"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/diamond9">
@@ -555,11 +556,10 @@
             android:id="@+id/rectangle13"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
-            android:layout_width="92.5dp"
-            android:layout_height="92.5dp"
+            android:layout_width="match_parent"
+            android:layout_height="112.5dp"
             android:src="@drawable/rounded_rectangle"
-            android:clickable="true"
-            android:onClick="diamond13"/>
+            android:clickable="true" />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -574,6 +574,7 @@
                 android:src="@drawable/diamond_mole"/>
 
             <TextView
+                android:id="@+id/diamond_text13"
                 android:paddingTop="3dp"
                 android:gravity="center_horizontal"
                 android:layout_width="wrap_content"
@@ -589,8 +590,8 @@
     </FrameLayout>
 
     <FrameLayout
-        android:layout_width="102.5dp"
-        android:layout_height="102.5dp"
+        android:layout_width="96.5dp"
+        android:layout_height="122.5dp"
         android:id="@+id/diamond14"
         app:layout_constraintLeft_toRightOf="@id/diamond13"
         app:layout_constraintTop_toBottomOf="@+id/diamond10">
@@ -599,11 +600,10 @@
             android:id="@+id/rectangle14"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
-            android:layout_width="92.5dp"
-            android:layout_height="92.5dp"
+            android:layout_width="match_parent"
+            android:layout_height="112.5dp"
             android:src="@drawable/rounded_rectangle"
-            android:clickable="true"
-            android:onClick="diamond14"/>
+            android:clickable="true" />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -618,6 +618,7 @@
                 android:src="@drawable/diamond_mole"/>
 
             <TextView
+                android:id="@+id/diamond_text14"
                 android:paddingTop="3dp"
                 android:gravity="center_horizontal"
                 android:layout_width="wrap_content"
@@ -633,8 +634,8 @@
     </FrameLayout>
 
     <FrameLayout
-        android:layout_width="102.5dp"
-        android:layout_height="102.5dp"
+        android:layout_width="96.5dp"
+        android:layout_height="122.5dp"
         android:id="@+id/diamond15"
         app:layout_constraintLeft_toRightOf="@id/diamond14"
         app:layout_constraintTop_toBottomOf="@+id/diamond11">
@@ -643,11 +644,10 @@
             android:id="@+id/rectangle15"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
-            android:layout_width="92.5dp"
-            android:layout_height="92.5dp"
+            android:layout_width="match_parent"
+            android:layout_height="112.5dp"
             android:src="@drawable/rounded_rectangle"
-            android:clickable="true"
-            android:onClick="diamond15"/>
+            android:clickable="true" />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -662,6 +662,7 @@
                 android:src="@drawable/diamond_mole"/>
 
             <TextView
+                android:id="@+id/diamond_text15"
                 android:paddingTop="3dp"
                 android:gravity="center_horizontal"
                 android:layout_width="wrap_content"
@@ -677,8 +678,8 @@
     </FrameLayout>
 
     <FrameLayout
-        android:layout_width="102.5dp"
-        android:layout_height="102.5dp"
+        android:layout_width="96.5dp"
+        android:layout_height="122.5dp"
         android:id="@+id/diamond16"
         app:layout_constraintLeft_toRightOf="@id/diamond15"
         app:layout_constraintTop_toBottomOf="@+id/diamond12">
@@ -687,11 +688,10 @@
             android:id="@+id/rectangle16"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
-            android:layout_width="92.5dp"
-            android:layout_height="92.5dp"
+            android:layout_width="match_parent"
+            android:layout_height="112.5dp"
             android:src="@drawable/rounded_rectangle"
-            android:clickable="true"
-            android:onClick="diamond16"/>
+            android:clickable="true" />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -706,6 +706,7 @@
                 android:src="@drawable/diamond_mole"/>
 
             <TextView
+                android:id="@+id/diamond_text16"
                 android:paddingTop="3dp"
                 android:gravity="center_horizontal"
                 android:layout_width="wrap_content"
@@ -723,10 +724,9 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="120dp"
+        android:layout_height="80dp"
         android:gravity="center"
-        app:layout_constraintTop_toBottomOf="@+id/diamond13"
-        android:layout_marginTop="20dp">
+        app:layout_constraintTop_toBottomOf="@+id/diamond13">
 
         <TextView
             android:id="@+id/price"
@@ -734,12 +734,12 @@
             android:layout_height="45dp"
             android:text="Price: "
             android:textSize="25dp"
-            android:gravity="center"/>
+            android:textColor="@color/white" />
 
         <Button
+            android:id="@+id/buyBtn"
             android:layout_width="80dp"
             android:layout_height="45dp"
-            android:layout_marginTop="20dp"
             android:text="BUY"
             android:textColor="@color/white"
             android:gravity="center"/>

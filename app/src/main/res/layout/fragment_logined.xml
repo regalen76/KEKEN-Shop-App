@@ -3,27 +3,100 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginedFragment">
+    tools:context=".LoginedFragment"
+    android:background="#232936">
+
+    <LinearLayout
+        android:background="#3c465c"
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KEKEN Shop"
+            android:textColor="@color/white"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/mclaren"
+            />
+    </LinearLayout>
 
     <TextView
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/header"
+        android:layout_marginTop="35dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/emailuser"/>
+        android:text="Account Details"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:id="@+id/periksatext"/>
 
-    <Button
-        android:id="@+id/logoutbtn"
-        android:layout_marginTop="20dp"
-        android:layout_below="@id/emailuser"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="LOGOUT"/>
+    <LinearLayout
+        android:id="@+id/periksaline"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@id/periksatext"
+        android:background="#3c465c"
+        android:orientation="horizontal" />
 
-<!--    ini bagian sementara, mau coba add data ke firebase-->
-    <Button
-        android:layout_below="@id/logoutbtn"
+    <RelativeLayout
+        android:layout_marginTop="25dp"
+        android:id="@+id/periksacontainer"
+        android:layout_centerHorizontal="true"
+        android:layout_width="350dp"
+        android:layout_height="130dp"
+        android:layout_below="@id/periksaline"
+        android:background="@drawable/layout_bg3">
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="email"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:id="@+id/emailuser"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/logoutbtn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/emailuser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_bg2"
+            android:text="LOGOUT"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/periksacontainer"
+        android:layout_marginTop="35dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/testbtn"
-        android:text="ADD data to firebase"/>
+        android:text="Purchase History"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:id="@+id/historytext"/>
+
+    <LinearLayout
+        android:id="@+id/historyline"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@id/historytext"
+        android:background="#3c465c"
+        android:orientation="horizontal" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/historycontainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/historyline"
+        android:layout_marginTop="25dp"/>
 
 </RelativeLayout>

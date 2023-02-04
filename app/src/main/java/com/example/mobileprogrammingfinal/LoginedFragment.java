@@ -5,6 +5,8 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -16,14 +18,23 @@ import android.widget.TextView;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class LoginedFragment extends Fragment {
 
     TextView emailUser;
-    Button logout,test;
+    Button logout;
+
+    TheAdapterPembelian myAdapter;
+    RecyclerView recyclerViewPembelian;
+    List<Pembelian> pembelians = new ArrayList<Pembelian>();
 
     private DatabaseReference mDatabase;
 
@@ -32,13 +43,12 @@ public class LoginedFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_logined, container, false);
 
-        mDatabase = FirebaseDatabase.getInstance("https://mobileprogrammingfinal-8f1a9-default-rtdb.asia-southeast1.firebasedatabase.app").getReference();
+        mDatabase = FirebaseDatabase.getInstance("https://mobileprogrammingfinal-8f1a9-default-rtdb.asia-southeast1.firebasedatabase.app").getReference("Pembelian");
 
         emailUser = view.findViewById(R.id.emailuser);
         logout = view.findViewById(R.id.logoutbtn);
 
-        emailUser.setText(FirebaseAuth.getInstance().getCurrentUser().getEmail());
-
+        emailUser.setText("Email: " +FirebaseAuth.getInstance().getCurrentUser().getEmail());
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -49,24 +59,35 @@ public class LoginedFragment extends Fragment {
             }
         });
 
-        //dibawah ini bagian sementara, cuma mau coba add data ke firebase
-        test = view.findViewById(R.id.testbtn);
-
-        test.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Pembelian pembelian = new Pembelian(32131,100,"Mobile Legend","Diamonds");
-
-                mDatabase.child("Pembelian").child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child(String.valueOf(pembelian.getInvoce())).setValue(pembelian, new DatabaseReference.CompletionListener() {
-                    @Override
-                    public void onComplete(@Nullable DatabaseError error, @NonNull DatabaseReference ref) {
-                        Log.d("zerotwo2","Value was set. Error = "+error);
-                    }
-                });
-            }
-        });
+        setupRecyclerViewPembelian(view);
 
         return view;
+    }
+
+    private void setupRecyclerViewPembelian(View view) {
+        pembelians.clear();
+
+        recyclerViewPembelian = view.findViewById(R.id.historycontainer);
+        myAdapter =  new TheAdapterPembelian(getActivity().getApplicationContext(),pembelians);
+
+        recyclerViewPembelian.setLayoutManager(new LinearLayoutManager(getActivity()));
+        recyclerViewPembelian.setAdapter(myAdapter);
+
+        mDatabase.child(FirebaseAuth.getInstance().getCurrentUser().getUid()).addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                for (DataSnapshot dataSnapshot : snapshot.getChildren()){
+                    Pembelian pembelian = dataSnapshot.getValue(Pembelian.class);
+                    pembelians.add(pembelian);
+                }
+                myAdapter.notifyDataSetChanged();
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
     }
 
 }

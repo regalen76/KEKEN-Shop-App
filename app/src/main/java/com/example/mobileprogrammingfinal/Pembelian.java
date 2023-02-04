@@ -2,51 +2,57 @@ package com.example.mobileprogrammingfinal;
 
 public class Pembelian {
 
-    public Integer invoce;
-    public String gameName;
-    public String currencyName;
-    public Integer amountCurrrency;
+    public String invoice;
+    public String price;
+    public String code;
+    public String item;
+    public String method;
 
     public Pembelian(){
 
     }
 
-    public Integer getInvoce() {
-        return invoce;
+    public String getInvoice() {
+        return invoice;
     }
 
-    public void setInvoce(Integer invoce) {
-        this.invoce = invoce;
+    public void setInvoice(String invoice) {
+        this.invoice = invoice;
     }
 
-    public String getGameName() {
-        return gameName;
+    public String getPrice() {
+        return price;
     }
 
-    public void setGameName(String gameName) {
-        this.gameName = gameName;
+    public void setPrice(String price) {
+        this.price = price;
     }
 
-    public String getCurrencyName() {
-        return currencyName;
+    public String getCode() {
+        return code;
     }
 
-    public void setCurrencyName(String currencyName) {
-        this.currencyName = currencyName;
+    public void setCode(String code) {
+        this.code = code;
     }
 
-    public Integer getAmountCurrrency() {
-        return amountCurrrency;
+    public String getItem() {
+        return item;
     }
 
-    public void setAmountCurrrency(Integer amountCurrrency) {
-        this.amountCurrrency = amountCurrrency;
+    public void setItem(String item) {
+        this.item = item;
     }
 
-    public Pembelian(Integer invoce, Integer amountCurrrency, String gameName, String currencyName){
-        this.invoce = invoce;
-        this.amountCurrrency = amountCurrrency;
-        this.gameName = gameName;
-        this.currencyName = currencyName;
+    public String getMethod() { return method; }
+
+    public void setMethod(String method) { this.method = method; }
+
+    public Pembelian(String invoice, String item, String price, String code, String method){
+        this.invoice = invoice;
+        this.item = item;
+        this.price = price;
+        this.code = code;
+        this.method = method;
     }
 }
